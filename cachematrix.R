@@ -30,6 +30,6 @@ cacheSolve <- function(x,...) {
   }
   data <- x[[2,1]]()  # the get function
   i <- solve(data,...)  # computes the inverse
-  x[[1,1]](i)   # sets the inverse in the object
+  x[[1,2]](i)   # sets the inverse in the object
   i   #returns the inverse
 }
